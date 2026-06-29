@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixel Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-camera"></i>
+            <h2>Pixel Gallery</h2>
+        </div>
+
+        <div class="nav-right">
+
+            <input type="text" id="searchBox" placeholder="Search Images">
+
+            <button id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>Creative Image Gallery</h1>
+
+        <p>
+            Browse beautiful collections of Nature, Cities, Cars and Animals.
+            Click any image to view it in full screen.
+        </p>
+
+    </section>
+
+    <!-- Categories -->
+
+    <h2 class="section-title">
+        <i class="fa-solid fa-folder-open"></i>
+        Categories
+    </h2>
+
+    <section class="filters">
+
+        <button class="active" data-filter="all">All</button>
+
+        <button data-filter="nature">Nature</button>
+
+        <button data-filter="city">City</button>
+
+        <button data-filter="cars">Cars</button>
+
+        <button data-filter="animals">Animals</button>
+
+    </section>
+
+    <!-- Image Filters -->
+
+    <h2 class="section-title">
+        <i class="fa-solid fa-sliders"></i>
+        Image Filters
+    </h2>
+
+    <section class="effects">
+
+        <button data-effect="none">Original</button>
+
+        <button data-effect="grayscale(100%)">Black & White</button>
+
+        <button data-effect="sepia(100%)">Sepia</button>
+
+        <button data-effect="brightness(120%)">Bright</button>
+
+        <button data-effect="contrast(150%)">Contrast</button>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="gallery">
+     
+                <!-- Nature Images -->
+
+        <div class="card nature">
+            <img src="images/nature1.png" alt="Nature Image">
+            <div class="overlay">
+                <h3>Nature</h3>
+                <button class="viewBtn">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="card nature">
+            <img src="images/nature2.png" alt="Nature Image">
+            <div class="overlay">
+                <h3>Nature</h3>
+                <button class="viewBtn">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- City Images -->
+
+        <div class="card city">
+            <img src="images/city1.png" alt="City Image">
+            <div class="overlay">
+                <h3>City</h3>
+                <button class="viewBtn">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="card city">
+            <img src="images/city2.png" alt="City Image">
+            <div class="overlay">
+                <h3>City</h3>
+                <button class="viewBtn">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Car Images -->
+
+        <div class="card cars">
+            <img src="images/car1.png" alt="Car Image">
+            <div class="overlay">
+                <h3>Cars</h3>
+                <button class="viewBtn">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="card cars">
+            <img src="images/car2.png" alt="Car Image">
+            <div class="overlay">
+                <h3>Cars</h3>
+                <button class="viewBtn">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Animal Images -->
+
+        <div class="card animals">
+            <img src="images/animal1.png" alt="Animal Image">
+            <div class="overlay">
+                <h3>Animals</h3>
+                <button class="viewBtn">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="card animals">
+            <img src="images/animal2.png" alt="Animal Image">
+            <div class="overlay">
+                <h3>Animals</h3>
+                <button class="viewBtn">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Lightbox -->
+
+    <div class="lightbox">
+
+        <span class="close">&times;</span>
+
+        <span class="prev">
+            <i class="fa-solid fa-angle-left"></i>
+        </span>
+
+        <img id="lightboxImage" src="" alt="Preview">
+
+        <span class="next">
+            <i class="fa-solid fa-angle-right"></i>
+        </span>
+
+        <div class="counter"></div>
+
+        <a id="downloadBtn" href="#" download>
+            <i class="fa-solid fa-download"></i>
+            Download
+        </a>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Pixel Gallery | Created by Ayesha</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
